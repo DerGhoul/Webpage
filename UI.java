@@ -1,7 +1,9 @@
 import java.awt.Toolkit;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
@@ -27,9 +29,10 @@ public class UI {
         interaction.setBounds(x, y, w, h);
         interaction.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         interaction.setLayout(null);
+        
 
         interaction.add(setButton((int) (0.2 * w), (int) (0.7 * h), (int) (0.6 * w), (int) (0.1 * h)));
-        
+        interaction.add(setServerLabel(x, y, h, w));
         //interaction.add(setEditor((int) (x + (0.1 * x)), (int) (y + (0.5 * y)), (int) 0.1 * h, (int) 0.9 * w));
         //interaction.add(setPasswordField(x, y, h, w));
         
@@ -52,5 +55,13 @@ public class UI {
         JPasswordField passwordField = new JPasswordField();
         passwordField.setBounds(x, y, w, h);
         return passwordField;
+    }
+
+    public JLabel setServerLabel(int x, int y, int h, int w) {
+        
+        ImageIcon i = new ImageIcon(getClass().getResource("/Server2.png"));
+        JLabel serverLabel = new JLabel(i);
+        serverLabel.setBounds(x, y, w, h);
+        return serverLabel;
     }
 }
