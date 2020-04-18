@@ -24,18 +24,19 @@ public class UI {
         h = Toolkit.getDefaultToolkit().getScreenSize().height / 2;
 
         JFrame interaction = new JFrame();
-        interaction.setBounds(x, y, h, w);
+        interaction.setBounds(x, y, w, h);
         interaction.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        interaction.setLayout(null);
+
+        interaction.add(setButton((int) (0.2 * w), (int) (0.7 * h), (int) (0.6 * w), (int) (0.1 * h)));
+        //interaction.add(setEditor((int) (x + (0.1 * x)), (int) (y + (0.5 * y)), (int) 0.1 * h, (int) 0.9 * w));
+        //interaction.add(setPasswordField(x, y, h, w));
+        
         interaction.setVisible(true);
-
-        interaction.add(setButton((int) 0.05 * x, y, (int) 0.01 * h, (int) 0.01 * h));
-        interaction.add(setEditor((int) (x + (0.1 * x)), (int) (y + (0.5 * y)), (int) 0.1 * h, (int) 0.9 * w));
-        interaction.add(setPasswordField(x, y, h, w));
-
     }
 
     public JButton setButton(int x, int y, int w, int h) {
-        JButton accept = new JButton();
+        JButton accept = new JButton("ANMELDEN");
         accept.setBounds(x, y, w, h);
         return accept;
     }
