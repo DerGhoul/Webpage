@@ -27,9 +27,10 @@ public class UI {
         interaction.setBounds(x, y, h, w);
         interaction.setVisible(true);
 
-        setButton((int) 0.05*x, y, (int) 0.01*h, (int) 0.01*h);
-        setEditor((int) (x+(0.1*x)), (int) (y+(0.5*y)), (int) 0.1*h, (int) 0.9*w);
-        setPasswordField(x, y, h, w);
+        interaction.add(setButton((int) 0.05*x, y, (int) 0.01*h, (int) 0.01*h));
+        interaction.add(setEditor((int) (x+(0.1*x)), (int) (y+(0.5*y)), (int) 0.1*h, (int) 0.9*w));
+        interaction.add(setPasswordField(x, y, h, w));
+
     }
 
     public void setButton(int x, int y, int h, int w) {
