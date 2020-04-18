@@ -29,6 +29,7 @@ public class UI {
         interaction.setLayout(null);
 
         interaction.add(setButton((int) (0.2 * w), (int) (0.7 * h), (int) (0.6 * w), (int) (0.1 * h)));
+        
         //interaction.add(setEditor((int) (x + (0.1 * x)), (int) (y + (0.5 * y)), (int) 0.1 * h, (int) 0.9 * w));
         //interaction.add(setPasswordField(x, y, h, w));
         
