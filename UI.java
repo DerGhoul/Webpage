@@ -7,7 +7,8 @@ import javax.swing.text.JTextComponent;
 
 public class UI {
 
-    public static void main() {
+    public static void main(String[] args) {
+        UI start = new UI();
         
     }
 
