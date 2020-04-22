@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class DataRead {
 
     public static void main(String[] args) throws IOException {
-        File file = new File("C:/temp/UserData.txt");
-        File sendFile = new File("C:/temp/UserDataSend.txt");
+        File file = new File("");
+        File sendFile = new File("");
         PrintWriter pWriter = null;
         pWriter = new PrintWriter(new FileWriter(sendFile));
         
