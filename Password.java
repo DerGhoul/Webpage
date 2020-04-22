@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.Scanner;
 
 public class Password {
 
@@ -34,12 +35,15 @@ public class Password {
     }
 
     private void insertUser(String userName, String passWord) throws FileNotFoundException {
-        File insertion = new File("/Insertion.txt");
+        File insertion = new File("Insertion.txt");
+        Scanner insertionScanner = new Scanner(insertion);
+        
         String line = (userName+";"+passWord);
 
         PrintWriter printWriter = new PrintWriter(insertion) ;
-        printWriter.write(line +"\n");   
         
+        insertionScanner.close();
         printWriter.close();
     }
+    
 }

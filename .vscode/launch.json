@@ -1,0 +1,42 @@
+{
+    // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+    // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+    // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DataRead<Webpage_1f18c2bb>",
+            "request": "launch",
+            "mainClass": "DataRead",
+            "projectName": "Webpage_1f18c2bb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SignUp<Webpage_1f18c2bb>",
+            "request": "launch",
+            "mainClass": "SignUp",
+            "projectName": "Webpage_1f18c2bb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-UI<Webpage_1f18c2bb>",
+            "request": "launch",
+            "mainClass": "UI",
+            "projectName": "Webpage_1f18c2bb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-UserLogin<Webpage_1f18c2bb>",
+            "request": "launch",
+            "mainClass": "UserLogin",
+            "projectName": "Webpage_1f18c2bb"
+        }
+    ]
+}
